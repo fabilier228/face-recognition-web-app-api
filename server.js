@@ -4,12 +4,12 @@ const cors = require('cors')
 const knex = require('knex')
 
 const db = knex({
-    client: 'pg',
+    client: 'pg', 
     connection: {
         host: '127.0.0.1',
-        user: 'kunik',
-        password: 'test',
-        database: 'smart-brain'
+        user: '', // write here your superuser name for database
+        password: '', // password (if you have any) for the database
+        database: '' // name of your database here
     }
 })
 
